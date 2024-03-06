@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English to Hindi Converter Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body class="container-fluid">
+
+  <h3 id="hindiTitle"> <u>Hindi Typing</u> </h3>
+
+  <div class="converter-container">
+    <label for="englishInput">Type in English:</label>
+    <input type="text" id="englishInput" />
+
+    <br>
+      
+    <div class="output-container">
+      <a href="#" class="select-option btn btn-primary">
+        <p id="hindiOutput"></p>
+      </a>
+    </div>
+  </div>
+   
+  
+  <script>  window.watsonAssistantChatOptions = {
+    integrationID: "0d52c66a-fead-420a-a920-507407ae95c8", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "be713ea2-e853-429a-a616-c5a8348c0afd", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+ </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

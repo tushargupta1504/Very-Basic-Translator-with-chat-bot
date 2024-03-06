@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Set your desired background color */
+    animation: colorChange 5s infinite alternate; /* Add a color change animation */
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #f0f0f0; /* Initial background color */
+    }
+    50% {
+      background-color: #87ceeb; /* Halfway background color */
+    }
+    100% {
+      background-color: #f0f0f0; /* Final background color */
+    }
+  }
+
+  .converter-container {
+    background-color: #f8f8f8; /* Soft background color */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;  /* Center the container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    width: 500px; /* Limit width for better readability */
+}
+
+input[type="text"] { 
+    width: 100%; 
+    margin-bottom: 15px; 
+}
+
+#hindiOutput {
+    font-family: 'Arial Unicode MS', sans-serif;
+}
+
+  
+  .container-fluid {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  #hindiTitle {
+    margin-left: 400px;
+  }
+  
+  .converter-container {
+    margin-top: 30px;
+    margin-left: 350px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  .output-container {
+    margin-left: 100px;
+    z-index: -1;
+  }
+  
+  .select-option {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Add your additional styles here */
+  
