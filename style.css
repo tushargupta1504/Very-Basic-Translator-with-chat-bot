@@ -1,67 +1,145 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Set your desired background color */
-    animation: colorChange 5s infinite alternate; /* Add a color change animation */
-  }
-  
-  @keyframes colorChange {
-    0% {
-      background-color: #f0f0f0; /* Initial background color */
-    }
-    50% {
-      background-color: #87ceeb; /* Halfway background color */
-    }
-    100% {
-      background-color: #f0f0f0; /* Final background color */
-    }
-  }
-
-  .converter-container {
-    background-color: #f8f8f8; /* Soft background color */
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;  /* Center the container */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    width: 500px; /* Limit width for better readability */
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  animation: colorChange 5s infinite alternate;
 }
 
-input[type="text"] { 
-    width: 100%; 
-    margin-bottom: 15px; 
+@keyframes colorChange {
+  0% {
+      background-color: #f0f0f0;
+  }
+  50% {
+      background-color: #87ceeb;
+  }
+  100% {
+      background-color: #f0f0f0;
+  }
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#hindiTitle {
+  margin-left: 50px;
+  color: #333;
+}
+
+.converter-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #hindiOutput {
-    font-family: 'Arial Unicode MS', sans-serif;
+  font-family: 'Arial Unicode MS', sans-serif;
 }
 
-  
-  .container-fluid {
-    margin: 0 auto;
-    max-width: 1200px;
+label {
+  margin-bottom: 10px;
+}
+
+.output-container {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.select-option {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4CAF50; /* Green color for the button */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.select-option:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Additional Text Styles */
+.support-text {
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-text {
+  color: #555;
+  margin-top: 10px;
+}
+
+.click-here {
+  color: #007bff; /* Blue color for links */
+  cursor: pointer;
+}
+
+/* Animation for additional items */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
   }
-  
-  #hindiTitle {
-    margin-left: 400px;
+  100% {
+      opacity: 1;
   }
-  
-  .converter-container {
-    margin-top: 30px;
-    margin-left: 350px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-  }
-  
-  .output-container {
-    margin-left: 100px;
-    z-index: -1;
-  }
-  
-  .select-option {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* Add your additional styles here */
-  
+}
+
+/* Additional Items Design */
+.additional-items {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.additional-items a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ... (previous styles) ... */
+
+/* Additional Items Design */
+.additional-items {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.additional-items a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* New section for Other Languages */
+.other-languages {
+  margin-top: 20px;
+}
+
+.other-languages h4 {
+  color: #333;
+}
+
+.other-languages a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* ... (additional styles for other items) ... */
+
